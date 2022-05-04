@@ -1,0 +1,184 @@
+body {
+    background: url('a.jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+.head {
+
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff6633b0;
+    ;
+    font-size: 2vw;
+    align-items: center;
+    color: rgb(243, 242, 242);
+
+}
+
+.head input {
+    border: none;
+    width: 10%;
+    background: floralwhite;
+    height: 100%;
+    font-size: inherit;
+    color: #ec5f30;
+    text-align: center;
+}
+
+#image1 {
+    display: none;
+    animation: RotateAnim 3s infinite linear;
+}
+
+@keyframes RotateAnim {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#divCanvas {
+    width: 83%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+
+}
+
+#canvas {
+
+
+    width: 100%;
+
+    border: solid 2px #ff6633;
+    border-top: none;
+    box-shadow: inset 0 0 12px #ff6633, 0 0 12px #ff6633;
+
+}
+
+#basement {
+    position: absolute;
+    left: 0px;
+    top: 90%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#basement div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border-radius: 50%;
+    width: 12%;
+    height: 55px;
+    background: #ec5f30;
+    border: none;
+    color: azure;
+}
+
+
+.rule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+    background: url(3.jpg);
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    z-index: 1;
+    -webkit-transition-duration: 2s;
+    /* для Android */
+    transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    /* для Android */
+    transition-timing-function: linear;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.rule p {
+    text-align: center;
+    font-size: 3vw;
+    color: azure;
+    background: #0000004f;
+
+}
+
+.finih {
+    width: 0%;
+    height: 0%;
+    background: url('444.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+
+
+}
+
+.finih h4 {
+    background: #0000009e;
+    font-size: 142%;
+    text-align: center;
+    color: #35f900;
+}
+.Record{
+    width: 0%;
+    height: 95%;
+    background: url('1.jpg');
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 3vw;
+ 
+}
+
+.Record button{
+    width: 100%;
+}
+#RecordT{
+     border-collapse: separate;
+    border: 4px solid;
+    color: #000000;
+    background: #c04f2bab;
+    text-align: center;
+    font-size: 3vw;
+    width: 40%;
+}

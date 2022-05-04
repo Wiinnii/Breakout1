@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <meta charset=UTF-8>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>Игра canvas</title>
+</head>
+
+<body>
+  <div class="finih">
+    <h4>Если желаете сохранить результат, введите ваше имя и нажмите "СОХРАНИТЬ"</h4>
+    <div>
+
+      <input type='text' name="nam" id='name' value='Ваше имя'>
+      <br>
+      <input type='button' onclick='sendCheck()' value="СОХРАНИТЬ">
+      <button type='button' onclick="finihOff()">ОТМЕНА</button>
+
+    </div>
+  </div>
+  <div class="rule">
+    <p>Цель игры &mdash; сбить все прямоугольники при помощи шарика и не дать шарику упасть мимо ракетки .
+      <br> Управление
+      <br> Если вы на персональном копьютере, управление ракеткой осуществляется стрелками на клавиатуре лево и право.
+      Для запуска мяча щелкните мышкой по игровой зоне.
+      <br> Если вы на мобильном устройстве, то появляются кнопки лево, право. Они будут находиться внизу экрана.
+      Запустить мяч можно при помощи касания зоны игры.
+    </p>
+    <button onclick="ruleOff()" class="ruleOff">Закрыть </button>
+  </div>
+  <div class="Record">
+    <table id="RecordT">
+     
+   </table> 
+    
+    <button onclick="recorOff()" class="recorOff">Закрыть </button>
+  </div>
+  <div class="body">
+    <div class='head'>
+
+      <div> Счет :<span id="score">0</span> </div>
+      <input type='button' id="Home" onclick=" document.location='index1.html'" value="Главная"></input>
+      <input type='button' id="Game" onclick=" document.location=''" value="Игра"></input>
+      <input type='button' id="suond" onclick="suond()" value="Звук ON"></input>
+      <input type='button'  value="Рекорды" onclick="record()"></input>
+      <input type='button' id="rule" onclick="rule()" value="Правила"></input>
+
+
+      <div> Жизни :<span id="life">3</span> </div>
+
+    </div>
+
+    <div onclick="start()" id="divCanvas">
+
+      <canvas id="canvas" width="1600" height="1080"></canvas>
+
+    </div>
+    <div id="basement">
+
+      <div id='BotomLeft' ontouchstart="touchstartLeft()" ontouchend="touchendLeft()">Влево</div>
+      <div id='BotomRight' ontouchstart="touchstartRight()" ontouchend="touchendRight()">Вправо</div>
+    </div>
+  </div>
+
+</body>
+<script src="http://fe.it-academy.by/JQ/jquery.js"></script>
+<script src="js.js"></script>
+</html>
